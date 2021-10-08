@@ -31,6 +31,6 @@ RUN apt update -y && apt -y install \
         --no-install-recommends \
         && rm -rf /var/lib/apt/lists/*
 
-RUN ln -s /root/.vscode /persistent_data/
+RUN ln -s /root/.vscode /persistent_data
 
 CMD [ "/usr/bin/code", "--user-data-dir=/persistent_data/codedata", "--verbose", "--no-sandbox", "/persistent_data/workspace/" ]
