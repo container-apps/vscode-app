@@ -31,62 +31,62 @@ RUN apt update -y && apt -y install \
         --no-install-recommends \
         && rm -rf /var/lib/apt/lists/*
 
-RUN /usr/bin/code --install-extension GitHub.remotehub && \
-        /usr/bin/code --install-extension TeamHub.teamhub  && \
-        /usr/bin/code --install-extension ponicode.ponicode  && \
-        /usr/bin/code --install-extension ms-toolsai.jupyter  && \
-        /usr/bin/code --install-extension dbaeumer.vscode-eslint  && \
-        /usr/bin/code --install-extension esbenp.prettier-vscode  && \
-        /usr/bin/code --install-extension ritwickdey.LiveServer  && \
-        /usr/bin/code --install-extension VisualStudioExptTeam.vscodeintellicode  && \
-        /usr/bin/code --install-extension eamodio.gitlens  && \
-        /usr/bin/code --install-extension ms-azuretools.vscode-docker  && \
-        /usr/bin/code --install-extension octref.vetur  && \
-        /usr/bin/code --install-extension formulahendry.code-runner  && \
-        /usr/bin/code --install-extension CoenraadS.bracket-pair-colorizer-2  && \
-        /usr/bin/code --install-extension MS-vsliveshare.vsliveshare  && \
-        /usr/bin/code --install-extension christian-kohler.path-intellisense  && \
-        /usr/bin/code --install-extension streetsidesoftware.code-spell-checker  && \
-        /usr/bin/code --install-extension naumovs.color-highlight  && \
-        /usr/bin/code --install-extension Shan.code-settings-sync  && \
-        /usr/bin/code --install-extension oderwat.indent-rainbow  && \
-        /usr/bin/code --install-extension MS-vsliveshare.vsliveshare-audio  && \
-        /usr/bin/code --install-extension wayou.vscode-todo-highlight  && \
-        /usr/bin/code --install-extension alefragnani.Bookmarks  && \
-        /usr/bin/code --install-extension Gruntfuggly.todo-tree  && \
-        /usr/bin/code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools  && \
-        /usr/bin/code --install-extension codezombiech.gitignore  && \
-        /usr/bin/code --install-extension vsciot-vscode.vscode-arduino  && \
-        /usr/bin/code --install-extension shardulm94.trailing-spaces  && \
-        /usr/bin/code --install-extension GraphQL.vscode-graphql  && \
-        /usr/bin/code --install-extension karigari.chat  && \
-        /usr/bin/code --install-extension kisstkondoros.vscode-gutter-preview  && \
-        /usr/bin/code --install-extension WakaTime.vscode-wakatime  && \
-        /usr/bin/code --install-extension flowtype.flow-for-vscode  && \
-        /usr/bin/code --install-extension kumar-harsh.graphql-for-vscode  && \
-        /usr/bin/code --install-extension IBM.output-colorizer  && \
-        /usr/bin/code --install-extension kisstkondoros.vscode-codemetrics  && \
-        /usr/bin/code --install-extension JuanBlanco.solidity  && \
-        /usr/bin/code --install-extension slevesque.shader  && \
-        /usr/bin/code --install-extension LeetCode.vscode-leetcode  && \
-        /usr/bin/code --install-extension usernamehw.errorlens  && \
-        /usr/bin/code --install-extension remimarsal.prettier-now  && \
-        /usr/bin/code --install-extension wwm.better-align  && \
-        /usr/bin/code --install-extension SirTori.indenticator  && \
-        /usr/bin/code --install-extension hnw.vscode-auto-open-markdown-preview  && \
-        /usr/bin/code --install-extension rangav.vscode-thunder-client  && \
-        /usr/bin/code --install-extension 42Crunch.vscode-openapi  && \
-        /usr/bin/code --install-extension emilast.LogFileHighlighter  && \
-        /usr/bin/code --install-extension mindaro.mindaro  && \
-        /usr/bin/code --install-extension bierner.emojisense  && \
-        /usr/bin/code --install-extension NativeScript.nativescript  && \
-        /usr/bin/code --install-extension oouo-diogo-perdigao.docthis  && \
-        /usr/bin/code --install-extension humao.rest-client  && \
-        /usr/bin/code --install-extension aaron-bond.better-comments  && \
-        /usr/bin/code --install-extension donjayamanne.githistory  && \
-        /usr/bin/code --install-extension ms-vscode.vscode-typescript-next  && \
-        /usr/bin/code --install-extension cmstead.js-codeformer  && \
-        /usr/bin/code --install-extension JeffersonLicet.snipped  && \
-        /usr/bin/code --install-extension anan.devdocstab
+RUN . /usr/bin/code --install-extension GitHub.remotehub && \
+        . /usr/bin/code --install-extension TeamHub.teamhub  && \
+        . /usr/bin/code --install-extension ponicode.ponicode  && \
+        . /usr/bin/code --install-extension ms-toolsai.jupyter  && \
+        . /usr/bin/code --install-extension dbaeumer.vscode-eslint  && \
+        . /usr/bin/code --install-extension esbenp.prettier-vscode  && \
+        . /usr/bin/code --install-extension ritwickdey.LiveServer  && \
+        . /usr/bin/code --install-extension VisualStudioExptTeam.vscodeintellicode  && \
+        . /usr/bin/code --install-extension eamodio.gitlens  && \
+        . /usr/bin/code --install-extension ms-azuretools.vscode-docker  && \
+        . /usr/bin/code --install-extension octref.vetur  && \
+        . /usr/bin/code --install-extension formulahendry.code-runner  && \
+        . /usr/bin/code --install-extension CoenraadS.bracket-pair-colorizer-2  && \
+        . /usr/bin/code --install-extension MS-vsliveshare.vsliveshare  && \
+        . /usr/bin/code --install-extension christian-kohler.path-intellisense  && \
+        . /usr/bin/code --install-extension streetsidesoftware.code-spell-checker  && \
+        . /usr/bin/code --install-extension naumovs.color-highlight  && \
+        . /usr/bin/code --install-extension Shan.code-settings-sync  && \
+        . /usr/bin/code --install-extension oderwat.indent-rainbow  && \
+        . /usr/bin/code --install-extension MS-vsliveshare.vsliveshare-audio  && \
+        . /usr/bin/code --install-extension wayou.vscode-todo-highlight  && \
+        . /usr/bin/code --install-extension alefragnani.Bookmarks  && \
+        . /usr/bin/code --install-extension Gruntfuggly.todo-tree  && \
+        . /usr/bin/code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools  && \
+        . /usr/bin/code --install-extension codezombiech.gitignore  && \
+        . /usr/bin/code --install-extension vsciot-vscode.vscode-arduino  && \
+        . /usr/bin/code --install-extension shardulm94.trailing-spaces  && \
+        . /usr/bin/code --install-extension GraphQL.vscode-graphql  && \
+        . /usr/bin/code --install-extension karigari.chat  && \
+        . /usr/bin/code --install-extension kisstkondoros.vscode-gutter-preview  && \
+        . /usr/bin/code --install-extension WakaTime.vscode-wakatime  && \
+        . /usr/bin/code --install-extension flowtype.flow-for-vscode  && \
+        . /usr/bin/code --install-extension kumar-harsh.graphql-for-vscode  && \
+        . /usr/bin/code --install-extension IBM.output-colorizer  && \
+        . /usr/bin/code --install-extension kisstkondoros.vscode-codemetrics  && \
+        . /usr/bin/code --install-extension JuanBlanco.solidity  && \
+        . /usr/bin/code --install-extension slevesque.shader  && \
+        . /usr/bin/code --install-extension LeetCode.vscode-leetcode  && \
+        . /usr/bin/code --install-extension usernamehw.errorlens  && \
+        . /usr/bin/code --install-extension remimarsal.prettier-now  && \
+        . /usr/bin/code --install-extension wwm.better-align  && \
+        . /usr/bin/code --install-extension SirTori.indenticator  && \
+        . /usr/bin/code --install-extension hnw.vscode-auto-open-markdown-preview  && \
+        . /usr/bin/code --install-extension rangav.vscode-thunder-client  && \
+        . /usr/bin/code --install-extension 42Crunch.vscode-openapi  && \
+        . /usr/bin/code --install-extension emilast.LogFileHighlighter  && \
+        . /usr/bin/code --install-extension mindaro.mindaro  && \
+        . /usr/bin/code --install-extension bierner.emojisense  && \
+        . /usr/bin/code --install-extension NativeScript.nativescript  && \
+        . /usr/bin/code --install-extension oouo-diogo-perdigao.docthis  && \
+        . /usr/bin/code --install-extension humao.rest-client  && \
+        . /usr/bin/code --install-extension aaron-bond.better-comments  && \
+        . /usr/bin/code --install-extension donjayamanne.githistory  && \
+        . /usr/bin/code --install-extension ms-vscode.vscode-typescript-next  && \
+        . /usr/bin/code --install-extension cmstead.js-codeformer  && \
+        . /usr/bin/code --install-extension JeffersonLicet.snipped  && \
+        . /usr/bin/code --install-extension anan.devdocstab
 
 CMD [ "/usr/bin/code", "--user-data-dir=/var/lib/vscode", "--no-sandbox" ]
