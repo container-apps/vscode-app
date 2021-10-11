@@ -32,8 +32,8 @@ RUN apt-get update -yq && apt-get -yq install \
         --no-install-suggests \
         && rm -rf /var/lib/apt/lists/*
 
-RUN useradd -d /runner runner
-USER runner
+RUN useradd -d /home/app-runner app-runner
+USER app-runner
 
 RUN /usr/bin/code --install-extension GitHub.remotehub \
         /usr/bin/code --install-extension TeamHub.teamhub \
