@@ -89,4 +89,4 @@ RUN [ "/usr/bin/code", "--user-data-dir=/var/lib/vscode", "--no-sandbox", "--ins
 RUN [ "/usr/bin/code", "--user-data-dir=/var/lib/vscode", "--no-sandbox", "--install-extension", "JeffersonLicet.snipped" ]
 RUN [ "/usr/bin/code", "--user-data-dir=/var/lib/vscode", "--no-sandbox", "--install-extension", "anan.devdocstab" ]
 
-CMD [ " "/usr/bin/code", "--user-data-dir=/var/lib/vscode", "--no-sandbox" ]
+CMD [ "/usr/bin/code", "--user-data-dir=/var/lib/vscode", "--no-sandbox" ]
