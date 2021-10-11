@@ -33,7 +33,8 @@ RUN apt-get update -yq && apt-get -yq install \
   && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -d /home/vscode vscode && \
-  mkdir -p /home/vscode
+  mkdir -p /home/vscode && \
+  chown vscode:vscode /home/vscode
 
 USER vscode
 
