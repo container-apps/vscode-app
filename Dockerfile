@@ -96,4 +96,4 @@ RUN /usr/bin/code --install-extension GitHub.remotehub \
   /usr/bin/code --install-extension JeffersonLicet.snipped \
   /usr/bin/code --install-extension anan.devdocstab
 
-CMD /usr/bin/code
+ENTRYPOINT [ "/usr/bin/code" ]
