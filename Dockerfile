@@ -86,7 +86,7 @@ RUN [ "/usr/bin/code", "--user-data-dir=/var/lib/vscode", "--no-sandbox", "--ins
 RUN [ "/usr/bin/code", "--user-data-dir=/var/lib/vscode", "--no-sandbox", "--install-extension", "donjayamanne.githistory" ]
 RUN [ "/usr/bin/code", "--user-data-dir=/var/lib/vscode", "--no-sandbox", "--install-extension", "ms-vscode.vscode-typescript-next" ]
 RUN [ "/usr/bin/code", "--user-data-dir=/var/lib/vscode", "--no-sandbox", "--install-extension", "cmstead.js-codeformer" ]
-RUN [ "/usr/bin/code", "--install-extension", "JeffersonLicet.snipped" ]
+RUN [ "/usr/bin/code", "--user-data-dir=/var/lib/vscode", "--no-sandbox", "--install-extension", "JeffersonLicet.snipped" ]
 RUN [ "/usr/bin/code", "--user-data-dir=/var/lib/vscode", "--no-sandbox", "--user-data-dir=/var/lib/vscode", "--no-sandbox", "--install-extension", "anan.devdocstab" ]
 
 CMD [ "/bin/bash" ]
