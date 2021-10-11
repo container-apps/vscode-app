@@ -4,7 +4,7 @@ FROM ghcr.io/container-app/debian-base:$BASE_IMAGE_VERSION
 
 RUN curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | apt-key add -
 RUN echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list
-RUN apt-get update -y && apt-get -y install \
+RUN apt-get update -yq && apt-get -yq install \
         code git \
         libasound2 \
         libatk1.0-0 \
@@ -29,8 +29,10 @@ RUN apt-get update -y && apt-get -y install \
         libxshmfence-dev \
         openssh-client \
         --no-install-recommends \
+        --no-install-suggests \
         && rm -rf /var/lib/apt/lists/*
 
+RUN useradd -d /runner runner
 USER runner
 
 RUN /usr/bin/code --install-extension GitHub.remotehub \
@@ -89,6 +91,6 @@ RUN /usr/bin/code --install-extension GitHub.remotehub \
         /usr/bin/code --install-extension ms-vscode.vscode-typescript-next \
         /usr/bin/code --install-extension cmstead.js-codeformer \
         /usr/bin/code --install-extension JeffersonLicet.snipped \
-        /usr/bin/code --install-extension anan.devdocstab \
+        /usr/bin/code --install-extension anan.devdocstab
 
-        CMD  /usr/bin/code --user-data-dir=/var/lib/vscode --no-sandbox
+CMD /usr/bin/code
