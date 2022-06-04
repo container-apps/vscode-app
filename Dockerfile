@@ -1,6 +1,6 @@
 ARG BASE_IMAGE_VERSION=latest
 
-FROM ghcr.io/container-app/debian-base:$BASE_IMAGE_VERSION
+FROM ghcr.io/container-apps/debian-base:$BASE_IMAGE_VERSION
 
 RUN curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | apt-key add -
 RUN echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list
