@@ -29,9 +29,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - dockerfile: ./Dockerfile.base
+          - dockerfile: Dockerfile.base
             tag: base
-          - dockerfile: ./Dockerfile.base
+          - dockerfile: Dockerfile.base
             tag: base-debug
 
     permissions:
